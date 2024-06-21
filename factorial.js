@@ -4,10 +4,11 @@
 
 let contador = 1;
 let num = prompt('Ingrese un numero: ');
-for(let i = 1; i <= num; i *= i){
+for(let i = 1; i <= num; i++){
     if(num >= 1){
+        contador = contador * i;
         // multi = factorial * contador;
-        document.write(i + ", ");
+        document.write(contador + ", ");
 
     }
         
