@@ -24,3 +24,4 @@ function perfecto(num){
 }
 
 perfecto(28);
+perfecto(2);
