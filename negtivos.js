@@ -4,12 +4,12 @@ let numeros = [1,2,3,-3,3,1,-9,100,200,-5000];
 
 for(let i = 0; i < numeros.length;i++){
 
-
+    // si un valor en el array es menor a 1 los muestro y despues les asigno el valor de 0;
     if(numeros[i] < 0){
-        console.log(`Los numeros negativos encontrados son: ${numeros[i]}`)
-        numeros[i] = 0;;
+
+        console.log(`Los numeros negativos encontrados son: ${numeros[i]}`);
+        numeros[i] = 0;
     }
-    
     
 }
 
