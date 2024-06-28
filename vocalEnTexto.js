@@ -1,24 +1,23 @@
-function vocales(){
-    let vocales = ['a','e','i','o','u'];
-    for(let i = 0; i < vocales.length; i++){}
-}
 
+//Escribe un programa que recorra un array de caracteres y cuente cuántas vocales (a, e, i, o, u) hay en el array.
 
-function vocalesEntexto(str){
-    let palabras = str.split(' ');
-
-    for(let i = 0; i < palabras.length; i++){
-        if(palabras[i] === vocales[i]){
-            let guardarVocal = [];
-            guardarVocal.push(vocales[i]);
-            for(let i = 0; i < guardarVocal.length; i++){
-                console.log(`La palabra ${str} tiene las vocales ${guardarVocal[i]}`);
-            }
-            
+function palabra(str){
     
+    let palabraArray = str.split('');
+
+    let contador = 0;
+
+    for(let i = 0; i < palabraArray.length; i++){
+        if(palabraArray[i] === 'a' || palabraArray[i] === 'e' || palabraArray[i] === 'i' || palabraArray[i] === 'o' || palabraArray[i] === 'u'){
+            contador++;
+        }
     }
 
-    }
+    console.log(`La palabra "${str}" tiene ${contador} vocales`);
 }
 
-palabra("hola");
+
+
+
+palabra('hola');
+palabra('Hola mundo')
