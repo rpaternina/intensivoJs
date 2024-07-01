@@ -22,3 +22,4 @@ let calculadora = {
 
 console.log(calculadora.division(10,2));
 console.log(calculadora.multiplicación(10,2));
+console.log(calculadora.suma(100,2));
