@@ -8,9 +8,15 @@ const matrix = [
   ]
 
   function findJavaScript(matrix) {
-    for(let i = 0; i < matrix.length; i++){
-      for(let j = 0; j < matrix[i].length; j++){
-        if(matrix[i][j] === 'JavaScript'){
+
+    //Con los bucles anidados puedo recorrer matrices
+    for(let i = 0; i < matrix.length; i++){ //primero recorro las filas
+
+      for(let j = 0; j < matrix[i].length; j++){ // Y despues las columnas
+
+        if(matrix[i][j] === 'JavaScript'){ //pregunto si en la fila[i] columna [j] esta javascrip
+            
+            // por ultimo muestro la posición en la que este se encuentra
             console.log(`La posición de la palabra JavaScript esta en la fila ${i} y la columna ${j}`);
         }
     }}}
